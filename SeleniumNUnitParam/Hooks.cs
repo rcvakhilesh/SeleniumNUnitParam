@@ -35,14 +35,14 @@ namespace SeleniumNUnitParam
         {
             if (browserType == BrowerType.Chrome)
                 Driver = new ChromeDriver();
-            else if (browserType == BrowerType.Firefox)
-            {
-                FirefoxDriverService service = FirefoxDriverService.CreateDefaultService();
-                service.FirefoxBinaryPath = @"C:\Program Files (x86)\Mozilla Firefox\firefox.exe";
-                service.HideCommandPromptWindow = true;
-                service.SuppressInitialDiagnosticInformation = true;
-                Driver = new FirefoxDriver(service);
-            }
+            //else if (browserType == BrowerType.Firefox)
+            //{
+            //    FirefoxDriverService service = FirefoxDriverService.CreateDefaultService();
+            //    service.FirefoxBinaryPath = @"C:\Program Files (x86)\Mozilla Firefox\firefox.exe";
+            //    service.HideCommandPromptWindow = true;
+            //    service.SuppressInitialDiagnosticInformation = true;
+            //    Driver = new FirefoxDriver(service);
+            //}
             else if(browserType == BrowerType.IE)
             {
                 Driver = new InternetExplorerDriver();
